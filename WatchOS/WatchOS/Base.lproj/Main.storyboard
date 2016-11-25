@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WatchOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="send to watch os" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jao-tH-xW5">
+                                <rect key="frame" x="75.5" y="135" width="225" height="133.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hH3-AO-d3S">
+                                <rect key="frame" x="120.5" y="318.5" width="134" height="30"/>
+                                <state key="normal" title="Send Text to Watch"/>
+                                <connections>
+                                    <action selector="sendTextToWatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XXH-Nc-K1L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jao-tH-xW5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="TzS-VA-8R0"/>
+                            <constraint firstItem="hH3-AO-d3S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VBX-jW-3gs"/>
+                            <constraint firstItem="Jao-tH-xW5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="Wss-D3-g1A"/>
+                            <constraint firstItem="hH3-AO-d3S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dTT-OF-pbL"/>
+                            <constraint firstItem="Jao-tH-xW5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pL6-ZM-pUF"/>
+                            <constraint firstItem="hH3-AO-d3S" firstAttribute="top" secondItem="Jao-tH-xW5" secondAttribute="bottom" constant="50" id="uFF-sI-ThQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textWord" destination="Jao-tH-xW5" id="pf9-JC-zOr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
