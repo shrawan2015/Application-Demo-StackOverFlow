@@ -29,6 +29,8 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
         changeAttributeOfText()
     }
     
+    @IBOutlet var buttonOutlet: WKInterfaceButton!
+    
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
@@ -52,6 +54,9 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
         textLabel.setText(message)
         print(message)
        
+    }
+    @IBAction func buttonClicked() {
+        buttonOutlet.setTitle("textNew")
     }
     
     func changeAttributeOfText() {

@@ -15,8 +15,14 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchKit" customModuleProvider="target">
                     <items>
                         <label width="1" alignment="left" verticalAlignment="center" text="text" textAlignment="center" id="E2z-tW-6SH"/>
+                        <button width="1" alignment="left" title="textOld" id="xNO-Mu-UaN">
+                            <connections>
+                                <action selector="buttonClicked" destination="AgC-eL-Hgc" id="5wf-g3-pAW"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
+                        <outlet property="buttonOutlet" destination="xNO-Mu-UaN" id="CRe-e8-zQn"/>
                         <outlet property="textLabel" destination="E2z-tW-6SH" id="p0P-xU-dcd"/>
                     </connections>
                 </controller>
