@@ -26,6 +26,7 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         checkSupportOfSession()
+        changeAttributeOfText()
     }
     
     override func didDeactivate() {
@@ -51,6 +52,18 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
         textLabel.setText(message)
         print(message)
        
+    }
+    
+    func changeAttributeOfText() {
+        
+        let paragraphStyle =  NSMutableParagraphStyle()
+        paragraphStyle.alignment = .left
+        let font = UIFont.boldSystemFont(ofSize: 12)
+        let attributes:Dictionary = [NSParagraphStyleAttributeName:paragraphStyle ,  NSFontAttributeName:font ]
+        
+        let attributeString:NSAttributedString = NSAttributedString(string: "HELLO", attributes: attributes)
+        textLabel.setAttributedText(attributeString)
+        
     }
     
 
