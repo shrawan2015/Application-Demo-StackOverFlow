@@ -57,6 +57,7 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
     }
     @IBAction func buttonClicked() {
         buttonOutlet.setTitle("textNew")
+        buttonOutlet.setAttributedTitle(<#T##attributedTitle: NSAttributedString?##NSAttributedString?#>)
     }
     
     func changeAttributeOfText() {
