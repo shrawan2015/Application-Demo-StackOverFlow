@@ -12,10 +12,25 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
+    }
+    
+    var refreshTimer = Timer()
+   
+    func startTimer() {
+        refreshTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(InterfaceController.timerDone), userInfo: nil, repeats: false)
+    }
+    
+    func stopTimer() {
+        refreshTimer.invalidate()
+    }
+    
+    func timerDone() {
+        //countDownTimer.stop()
+        //countDownTimer.setHidden(true)
     }
     
     override func willActivate() {
