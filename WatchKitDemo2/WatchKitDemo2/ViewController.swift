@@ -19,8 +19,8 @@ class ViewController: UIViewController,WCSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         checkStatus()
+        updateSavedState()
     }
     
     func checkStatus() {
@@ -30,7 +30,6 @@ class ViewController: UIViewController,WCSessionDelegate {
             session?.delegate = self
             session?.activate()
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,15 +39,11 @@ class ViewController: UIViewController,WCSessionDelegate {
     
     
     public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
-        print("activationDidCompleteWith")
          /** Called when the session has completed activation. If session state is WCSessionActivationStateNotActivated there will be an error with more details. */
     }
 
      func sessionDidBecomeInactive(_ session: WCSession){
         
-        print("sessionDidBecomeInactive")
-
         /** ------------------------- iOS App State For Watch ------------------------ */
         
         /** Called when the session can no longer be used to modify or add any new transfers and, all interactive messages will be cancelled, but delegate callbacks for background transfers can still occur. This will happen when the selected watch is being changed. */
@@ -56,25 +51,22 @@ class ViewController: UIViewController,WCSessionDelegate {
     }
 
      func sessionDidDeactivate(_ session: WCSession){
-        print("sessionDidDeactivate")
-
         /** Called when all delegate callbacks for the previously selected watch has occurred. The session can be re-activated for the now selected watch using activateSession. */
 
     }
     
+    
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        let type = applicationContext["watchType"]
-
-        NSLog("There was an error saving the record: %@", "error")
-        
-        DispatchQueue.main.async {
-            print("didReceiveApplicationContext")
-
+        let type = applicationContext["watchType"]!
+         DispatchQueue.main.async {
             self.updateLabel.text =  " Type: \(type)"
+            UserDefaults.standard.set(type, forKey: "savedState") //setObject
         }
-        
-        print("didReceiveApplicationContext")
-        }
+    }
+    
+    func updateSavedState() {
+        self.updateLabel.text = UserDefaults.standard.string(forKey: "savedState")
+    }
     
    }
 

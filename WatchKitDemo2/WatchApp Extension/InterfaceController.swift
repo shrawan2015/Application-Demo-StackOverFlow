@@ -86,9 +86,4 @@ class InterfaceController: WKInterfaceController,WCSessionDelegate {
         print("didfinish called ")
     }
     
-//     public func session(_ session: WCSession, didFinish userInfoTransfer: WCSessionUserInfoTransfer, error: Error?) {
-//     print("didFinish watch")
-//        print(session)
-//        print(error)
-//    }
 }
