@@ -115,5 +115,117 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WatchKitDemo2/ViewController.swift"
+            timestampString = "502108069.958475"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "session(_:didReceiveApplicationContext:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WatchKitDemo2.ViewController.session (__ObjC.WCSession, didReceiveApplicationContext : Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "WatchKitDemo2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shrawans/Desktop/Application-Demo-StackOverFlow/WatchKitDemo2/WatchKitDemo2/ViewController.swift"
+                  timestampString = "502108375.762501"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "43">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WatchKitDemo2.ViewController.(session (__ObjC.WCSession, didReceiveApplicationContext : Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()).(closure #1)"
+                  moduleName = "WatchKitDemo2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shrawans/Desktop/Application-Demo-StackOverFlow/WatchKitDemo2/WatchKitDemo2/ViewController.swift"
+                  timestampString = "502108375.765187"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "22">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WatchKitDemo2/ViewController.swift"
+            timestampString = "502108070.294058"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "session(_:didReceiveApplicationContext:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WatchKitDemo2.ViewController.session (__ObjC.WCSession, didReceiveApplicationContext : Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "WatchKitDemo2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shrawans/Desktop/Application-Demo-StackOverFlow/WatchKitDemo2/WatchKitDemo2/ViewController.swift"
+                  timestampString = "502108375.769599"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "271">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WatchKitDemo2.ViewController.(session (__ObjC.WCSession, didReceiveApplicationContext : Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()).(closure #1)"
+                  moduleName = "WatchKitDemo2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shrawans/Desktop/Application-Demo-StackOverFlow/WatchKitDemo2/WatchKitDemo2/ViewController.swift"
+                  timestampString = "502108375.771969"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "22">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WatchKitDemo2/ViewController.swift"
+            timestampString = "502108073.102257"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "updateSavedState()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

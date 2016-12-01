@@ -66,7 +66,17 @@ class ViewController: UIViewController,WCSessionDelegate {
     
     func updateSavedState() {
         self.updateLabel.text = UserDefaults.standard.string(forKey: "savedState")
+        
     }
     
    }
+
+extension Integer {
+    
+    func toCheck() {
+        
+    }
+    
+    
+}
 
