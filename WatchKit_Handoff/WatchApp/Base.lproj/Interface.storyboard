@@ -21,9 +21,19 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <segue destination="qyc-MH-sCS" kind="relationship" relationship="nextPage" id="HdH-78-1RZ"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Kaa-iQ-jMf">
+            <objects>
+                <controller id="qyc-MH-sCS" customClass="DetailViewController" customModule="WatchApp_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="464" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

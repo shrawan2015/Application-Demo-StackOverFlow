@@ -20,6 +20,8 @@
 		046FF8981DEDB64600261C3C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FF8971DEDB64600261C3C /* NotificationController.swift */; };
 		046FF89A1DEDB64600261C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046FF8991DEDB64600261C3C /* Assets.xcassets */; };
 		046FF89E1DEDB64600261C3C /* WatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 046FF8801DEDB64500261C3C /* WatchApp.app */; };
+		04AB8BF41DF548490010951D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AB8BF31DF548490010951D /* DetailViewController.swift */; };
+		04AB8BF61DF54C310010951D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046FF8821DEDB64500261C3C /* Interface.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,7 @@
 		046FF8971DEDB64600261C3C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		046FF8991DEDB64600261C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046FF89B1DEDB64600261C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04AB8BF31DF548490010951D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,7 @@
 				046FF8991DEDB64600261C3C /* Assets.xcassets */,
 				046FF89B1DEDB64600261C3C /* Info.plist */,
 				046FF8911DEDB64600261C3C /* Supporting Files */,
+				04AB8BF31DF548490010951D /* DetailViewController.swift */,
 			);
 			path = "WatchApp Extension";
 			sourceTree = "<group>";
@@ -291,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AB8BF61DF54C310010951D /* Interface.storyboard in Resources */,
 				046FF89A1DEDB64600261C3C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +319,7 @@
 				046FF8981DEDB64600261C3C /* NotificationController.swift in Sources */,
 				046FF8961DEDB64600261C3C /* ExtensionDelegate.swift in Sources */,
 				046FF8941DEDB64600261C3C /* InterfaceController.swift in Sources */,
+				04AB8BF41DF548490010951D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
