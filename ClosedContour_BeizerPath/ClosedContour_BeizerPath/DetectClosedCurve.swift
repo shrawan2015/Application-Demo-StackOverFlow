@@ -34,10 +34,12 @@ class DetectClosedCurve :UIView  {
         currentContext?.restoreGState()
         
         let status = openPath.isClosedCurve()
-        print("  openPath status  == \(status)")
+        print("  closePath status  == \(status)")
         
         let statusClose = closePath.isClosedCurve()
         print("  closePath status == \(statusClose)")
+        
+        
         
     }
     
@@ -49,7 +51,22 @@ class DetectClosedCurve :UIView  {
         path.addLine(to: CGPoint(x:170,y:120))
         //        mainPath addLineToPoint:CGPointMake(170, 120
         path.close()
-        return path
+        
+        let circlePath = UIBezierPath(arcCenter: CGPoint(x: 100,y: 100), radius: CGFloat(20), startAngle: CGFloat(0), endAngle:CGFloat(M_PI * 2), clockwise: true)
+
+        
+        let arrowPath = UIBezierPath()
+        arrowPath.move(to: CGPoint(x:50, y:0))
+        arrowPath.addLine(to:CGPoint(x:70, y:25))
+        arrowPath.addLine(to: CGPoint(x:60, y:25))
+        arrowPath.addLine(to: CGPoint(x:60, y:75))
+        arrowPath.addLine(to: CGPoint(x:40, y:75))
+        arrowPath.addLine(to: CGPoint(x:40, y:25))
+        arrowPath.addLine(to: CGPoint(x:30, y:25))
+        arrowPath.addLine(to: CGPoint(x:50, y:0))
+        
+        //arrowPath.close()
+        return arrowPath
         
     }
     
