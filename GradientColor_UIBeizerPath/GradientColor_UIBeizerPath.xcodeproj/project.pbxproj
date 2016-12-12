@@ -12,6 +12,9 @@
 		048ABFF11DFA6C1A00489AA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048ABFEF1DFA6C1A00489AA8 /* Main.storyboard */; };
 		048ABFF31DFA6C1B00489AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048ABFF21DFA6C1B00489AA8 /* Assets.xcassets */; };
 		048ABFF61DFA6C1B00489AA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048ABFF41DFA6C1B00489AA8 /* LaunchScreen.storyboard */; };
+		048ABFFE1DFA6FCA00489AA8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048ABFFD1DFA6FCA00489AA8 /* GradientView.swift */; };
+		04EAAB9D1DFAE0EF00B02BF9 /* CircularGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EAAB9C1DFAE0EE00B02BF9 /* CircularGradient.swift */; };
+		04EAAB9F1DFEA1F200B02BF9 /* DrawCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EAAB9E1DFEA1F100B02BF9 /* DrawCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		048ABFF21DFA6C1B00489AA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		048ABFF51DFA6C1B00489AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		048ABFF71DFA6C1B00489AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048ABFFD1DFA6FCA00489AA8 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		04EAAB9C1DFAE0EE00B02BF9 /* CircularGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularGradient.swift; path = ../CircularGradient.swift; sourceTree = "<group>"; };
+		04EAAB9E1DFEA1F100B02BF9 /* DrawCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				048ABFEB1DFA6C1800489AA8 /* AppDelegate.swift */,
+				04EAAB9C1DFAE0EE00B02BF9 /* CircularGradient.swift */,
 				048ABFED1DFA6C1900489AA8 /* ViewController.swift */,
 				048ABFEF1DFA6C1A00489AA8 /* Main.storyboard */,
 				048ABFF21DFA6C1B00489AA8 /* Assets.xcassets */,
 				048ABFF41DFA6C1B00489AA8 /* LaunchScreen.storyboard */,
 				048ABFF71DFA6C1B00489AA8 /* Info.plist */,
+				048ABFFD1DFA6FCA00489AA8 /* GradientView.swift */,
+				04EAAB9E1DFEA1F100B02BF9 /* DrawCircle.swift */,
 			);
 			path = GradientColor_UIBeizerPath;
 			sourceTree = "<group>";
@@ -136,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EAAB9D1DFAE0EF00B02BF9 /* CircularGradient.swift in Sources */,
 				048ABFEE1DFA6C1900489AA8 /* ViewController.swift in Sources */,
+				04EAAB9F1DFEA1F200B02BF9 /* DrawCircle.swift in Sources */,
 				048ABFEC1DFA6C1800489AA8 /* AppDelegate.swift in Sources */,
+				048ABFFE1DFA6FCA00489AA8 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +311,7 @@
 				048ABFFC1DFA6C1B00489AA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

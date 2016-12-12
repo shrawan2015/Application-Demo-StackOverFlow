@@ -44,3 +44,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+/*
+ let context = UIGraphicsGetCurrentContext()
+ CGContextBeginTransparencyLayer(context, nil)
+ 
+ let path3Path = UIBezierPath(rect: CGRectMake(0, 0, 40, 40))
+ UIColor.blueColor().setFill()
+ path3Path.fill()
+ 
+ CGContextSetBlendMode(context, kCGBlendModeDestinationOut)
+ let path2Path = UIBezierPath(rect: CGRectMake(5, 5, 20, 20))
+ path2Path.fill()
+ let path1Path = UIBezierPath(rect: CGRectMake(15, 15, 20, 20))
+ path1Path.fill()
+ 
+ CGContextEndTransparencyLayer(context)
+
+*/
