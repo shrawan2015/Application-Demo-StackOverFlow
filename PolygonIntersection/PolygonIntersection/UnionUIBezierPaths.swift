@@ -24,6 +24,9 @@ class UnionUIBezierPaths : UIView {
        secondBeizerPath = drawOverLapPath(firstBeizerpath: polygon(), secondBeizerPath: drawCircle())
  
         let image = UIImage().overLap2Layer(firstLayer:firstBeizerPath , secondLayer:secondBeizerPath)
+       let imageView = UIImageView(image:image)
+        
+        addSubview(imageView)
         print(image)
     }
     
