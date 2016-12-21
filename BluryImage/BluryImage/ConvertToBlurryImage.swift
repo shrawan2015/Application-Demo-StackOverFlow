@@ -35,7 +35,7 @@ class ConvertToBlurryImage:UIView {
     }
     
     func blendImage(image:UIImage) -> UIImage {
-        
+        z
         UIGraphicsBeginImageContext(frame.size)
         image.draw(in: CGRect(origin: frame.origin, size: frame.size) )
         

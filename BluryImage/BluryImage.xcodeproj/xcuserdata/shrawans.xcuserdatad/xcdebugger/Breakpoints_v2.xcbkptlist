@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BluryImage/ConvertToBlurryImage.swift"
-            timestampString = "503587049.064774"
+            timestampString = "504011546.388837"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "returnBlurImage(image:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BluryImage/ConvertToBlurryImage.swift"
-            timestampString = "503585641.904736"
+            timestampString = "504011546.388837"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "draw(_:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "blendImage(image:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BluryImage/ConvertToBlurryImage.swift"
-            timestampString = "503585641.904736"
+            timestampString = "504011379.676935"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "draw(_:)"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "blendImage(image:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
