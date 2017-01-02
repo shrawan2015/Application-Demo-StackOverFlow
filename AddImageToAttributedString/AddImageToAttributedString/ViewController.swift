@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     var attributedString:NSAttributedString!
     var imageArray : [UIImage]!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
