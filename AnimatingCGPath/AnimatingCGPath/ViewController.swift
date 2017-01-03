@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     
     var penLayer:CALayer!
-    var pathLayer:CALayer!
+    var pathLayer:CAShapeLayer!
     var pathToTrace:CALayer!
     var animateLayer:CALayer!
     
@@ -24,7 +24,10 @@ class ViewController: UIViewController {
         addpenLayer()
         
         drawGmailPath()
-        animateGmailPath()
+        
+        animatePenAndText()
+        
+//        animateGmailPath()
     
     
     }
@@ -112,20 +115,73 @@ class ViewController: UIViewController {
     }
     
     func drawGmailPath() {
-        
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = gmailPath().cgPath
-        
-        
     }
     
     
-    func animateGmailPath() -> UIBezierPath {
+    
+    
+    
+    
+//    addAnimateLayer()
+//    addPathLayer()
+//    addpenLayer()
+  
+    
+    func addAnimateLayer() {
+        let animateLayer = CALayer()
+        animateLayer.frame = CGRect(x: 20.0, y: 40.0, width: self.view.layer.bounds.width - 40.0, height: self.view.layer.bounds.height - 84.0)
+        self.view.layer.addSublayer(animateLayer)
+        self.animateLayer = animateLayer
+    
+    }
+    
+    func addPathLayer() {
         
+        let path = gmailPath()
+        let pathLayer = CAShapeLayer()
+        pathLayer.path = path.cgPath
+        pathLayer.fillColor = UIColor.clear.cgColor
+        pathLayer.strokeColor = UIColor.red.cgColor
+        pathLayer.frame = animateLayer.bounds
+        pathLayer.bounds = animateLayer.bounds
+        pathLayer.isGeometryFlipped = true
+        pathLayer.strokeColor = UIColor.black.cgColor
+        pathLayer.lineWidth = 10.0
+        pathLayer.lineJoin = kCALineJoinBevel
+        animateLayer.addSublayer(pathLayer)
         
+        self.pathLayer = pathLayer
         
     }
     
+    func addpenLayer() {
+        
+        let penImage = UIImage(named: "penProjection.png")
+        let penLayer = CALayer()
+        penLayer.contents = penImage?.cgImage
+        penLayer.anchorPoint = CGPoint.zero
+        penLayer.frame = CGRect(x: 0, y: 0, width:(penImage?.size.width)! , height: (penImage?.size.height)!)
+        pathLayer.addSublayer(penLayer)
+       
+        self.penLayer = penLayer
+    }
     
+    
+    func animatePenAndText() {
+
+        let pathAnimation = CABasicAnimation(keyPath: "strokeEnd")
+        pathAnimation.duration = 10.0
+        pathAnimation.fromValue = 0.0
+        pathAnimation.toValue = 1.0
+        pathLayer?.add(pathAnimation, forKey: "strokeEnd")
+        
+        let penAnimation = CAKeyframeAnimation(keyPath: "position")
+        penAnimation.duration = 10.0
+        penAnimation.path = self.pathLayer.path
+        penAnimation.calculationMode = kCAAnimationPaced
+        penLayer?.add(penAnimation, forKey: "position")
+    }
 }
 
