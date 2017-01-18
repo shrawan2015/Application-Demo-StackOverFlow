@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     }
 
 
-   //MARK:-  Create path 
+   //MARK:-  Create path
     func gmailPath() -> UIBezierPath {
         let path = UIBezierPath()
         path.move(to: CGPoint(x: 20, y: 20))
