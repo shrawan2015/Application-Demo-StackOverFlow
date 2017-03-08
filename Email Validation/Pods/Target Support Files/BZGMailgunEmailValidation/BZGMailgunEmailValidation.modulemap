@@ -1,0 +1,6 @@
+framework module BZGMailgunEmailValidation {
+  umbrella header "BZGMailgunEmailValidation-umbrella.h"
+
+  export *
+  module * { export * }
+}

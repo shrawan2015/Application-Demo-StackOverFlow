@@ -1,0 +1,6 @@
+framework module Pods_TextValidation {
+  umbrella header "Pods-TextValidation-umbrella.h"
+
+  export *
+  module * { export * }
+}

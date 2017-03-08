@@ -1,0 +1,12 @@
+PODS:
+  - BZGMailgunEmailValidation (1.1.1)
+
+DEPENDENCIES:
+  - BZGMailgunEmailValidation
+
+SPEC CHECKSUMS:
+  BZGMailgunEmailValidation: 9951fc8e2a9435d2fa82ac04cb9e8c6cca7af3fc
+
+PODFILE CHECKSUM: 031d045f6f72bef5b90718256b53d58af9dc0699
+
+COCOAPODS: 1.2.0
